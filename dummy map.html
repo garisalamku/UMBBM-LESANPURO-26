@@ -667,8 +667,8 @@
         // ─── MAP ───
         const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap',
             maxZoom: 19 });
-        const sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: '© Esri',
-            maxZoom: 18 });
+        const sat = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', { attribution: '© Google Earth',
+            maxZoom: 20, subdomains: ['mt0','mt1','mt2','mt3'] });
         const map = L.map('map', { zoomControl: false }).setView(CENTER, 17);
         osm.addTo(map);
         L.control.zoom({ position: 'bottomright' }).addTo(map);
