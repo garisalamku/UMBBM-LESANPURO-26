@@ -586,79 +586,41 @@
             { name: "RT 2", color: "#e67e22", center: centerOf(RT2_POLY) },
             { name: "RT 3", color: "#2ecc71", center: centerOf(RT3_POLY) },
             { name: "RT 4", color: "#9b59b6", center: centerOf(RT4_POLY) },
-            { name: "RT 5", color: "#e74c3c", center: centerOf(RT5_POLY) }
+            { name: "RT 5", color: "#ffff1a", center: centerOf(RT5_POLY) }
         ];
 
         // ─── FASILITAS (LAYERS) ───
         const LAYERS_DEF = {
-            sekolah: { label: "Sekolah", color: "#185FA5", em: "🏫", points: [
-                    { name: "SDN Lesanpuro 4", rt: "RT 1", lat: -7.983635, lng: 112.661428,
-                        info: "SD Negeri, kelas 1–6" },
-                    { name: "SDN Lesanpuro 1", rt: "RT 3", lat: -7.983263, lng: 112.663808,
-                        info: "SD Negeri, kelas 1–6" }
-                ] },
             masjid: { label: "Masjid/Musholla", color: "#0F6E56", em: "🕌", points: [
-                    { name: "Masjid Al-Ikhlas", rt: "RT 1", lat: -7.983511, lng: 112.661088,
-                        info: "Masjid utama RT 1" },
                     { name: "Musholla Nurussalam Waqof", rt: "RT 1", lat: -7.984077797584276, lng: 112.66055769757592,
-                        info: "Musholla RT 1" },
-                    { name: "Masjid Nurul Iman", rt: "RT 3", lat: -7.983387, lng: 112.664148,
-                        info: "Masjid RT 3" },
-                    { name: "Musholla Ar-Rahman", rt: "RT 4", lat: -7.982767, lng: 112.664233,
-                        info: "Musholla RT 4" },
-                    { name: "Musholla Al-Barokah", rt: "RT 4", lat: -7.982519, lng: 112.663383,
-                        info: "Musholla RT 4" }
+                        info: "Musholla RT 1" }
                 ] },
             umkm: { label: "UMKM", color: "#BA7517", em: "🏪", points: [
-                    { name: "Warung Makan Pak Hadi", rt: "RT 1", lat: -7.983759, lng: 112.661938,
-                        info: "Warung makan nasi campur" },
-                    { name: "Toko Sembako Berkah", rt: "RT 2", lat: -7.983759, lng: 112.662958,
-                        info: "Toko kelontong" },
                     { name: "Cilok Sawo & Bakso Horeg", rt: "RT 2", lat: -7.98346056733647, lng: 112.66165310728296,
                         info: "Toko jajanan" },
                     { name: "Owl Coffee Shop", rt: "RT 2", lat: -7.983009322669641, lng: 112.66112163663429,
                         info: "Warung kopi" },
                     { name: "Huzna Frozen Food", rt: "RT 2", lat: -7.98343564309693, lng: 112.66161200703667,
                         info: "Toko bahan baku makanan" },
-                    { name: "Konveksi Bu Ani", rt: "RT 3", lat: -7.983139, lng: 112.664488,
-                        info: "Usaha konveksi pakaian" },
                     { name: "Cipto Roso", rt: "RT 3", lat: -7.982925, lng: 112.661429,
-                        info: "Warung makan" },
+                        info: "Warung minuman" },
                     { name: "Seblak Lambe Pedas", rt: "RT 3", lat: -7.982756317968009, lng: 112.66129513502462,
                         info: "Warung makan" },
-                    { name: "Bengkel Motor Jaya", rt: "RT 4", lat: -7.982705, lng: 112.663638,
-                        info: "Bengkel motor & las listrik" },
                     { name: "Warung Soto Mbak Novi", rt: "RT 5", lat: -7.984876776672121, lng: 112.66141781745759,
                         info: "Warung makan" },
                     { name: "Donut Salju", rt: "RT 5", lat: -7.984789760033328, lng: 112.66146760978665,
                         info: "Toko roti" },
                     { name: "Mie Pangsit 5758", rt: "RT 5", lat: -7.984463746239488, lng: 112.66124267103159,
-                        info: "Warung makan" }
-                ] },
-            klinik: { label: "Klinik/Kesehatan", color: "#A32D2D", em: "🏥", points: [
-                    { name: "Posyandu Melati RW 4", rt: "RT 1", lat: -7.983573, lng: 112.661598,
-                        info: "Posyandu balita & lansia, buka tiap Rabu" },
-                    { name: "Klinik Pratama Lesanpuro", rt: "RT 4", lat: -7.982643, lng: 112.663978,
-                        info: "Klinik umum, Senin–Sabtu" }
+                        info: "Warung makan" },
+                    { name: "Kopi Tiwus", rt: "RT 3", lat: -7.982663162391051, lng: 112.66134139877968,
+                        info: "warung kopi" }
                 ] },
             wisata: { label: "Wisata", color: "#3B6D11", em: "🌳", points: [
-                    { name: "Taman Warga RW 4", rt: "RT 2", lat: -7.983883, lng: 112.663383,
-                        info: "Ruang terbuka hijau & bermain anak" },
-                    { name: "Situ Lesanpuro", rt: "RT 4", lat: -7.983015, lng: 112.665083,
-                        info: "Wisata alam / embung" },
                     { name: "Kolam Renang Tirta Sari", rt: "RT 5", lat: -7.98489856550751, lng: 112.66097612218887,
                         info: "Tempat rekreasi" }
                 ] },
             posronda: { label: "Pos Ronda", color: "#5F5E5A", em: "🏠", points: [
-                    { name: "Pos Ronda RT 1", rt: "RT 1", lat: -7.983387, lng: 112.661258,
-                        info: "Pos keamanan aktif 24 jam" },
-                    { name: "Pos Ronda RT 2", rt: "RT 2", lat: -7.983759, lng: 112.663213,
-                        info: "Pos keamanan" },
-                    { name: "Pos Ronda RT 3", rt: "RT 3", lat: -7.983077, lng: 112.664318,
-                        info: "Pos keamanan" },
                     { name: "Pos Ronda RT 4", rt: "RT 4", lat: -7.9827319733371445, lng: 112.66195409432633,
-                        info: "Pos keamanan" },
-                    { name: "Pos Ronda RT 5", rt: "RT 5", lat: -7.984131, lng: 112.663638,
                         info: "Pos keamanan" }
                 ] }
         };
@@ -667,8 +629,8 @@
         // ─── MAP ───
         const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap',
             maxZoom: 19 });
-        const sat = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', { attribution: '© Google Earth',
-            maxZoom: 20, subdomains: ['mt0','mt1','mt2','mt3'] });
+        const sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: '© Esri',
+            maxZoom: 18 });
         const map = L.map('map', { zoomControl: false }).setView(CENTER, 17);
         osm.addTo(map);
         L.control.zoom({ position: 'bottomright' }).addTo(map);
@@ -839,11 +801,11 @@
             const bar = document.getElementById('statsbar');
             const total = Object.values(LAYERS_DEF).reduce((s, l) => s + l.points.length, 0);
             [
-                { n: 5, l: 'RT' },
+                { n: RT_DATA.length, l: 'RT' },
                 { n: total, l: 'Lokasi' },
                 { n: LAYERS_DEF.masjid.points.length, l: 'Masjid' },
-                { n: LAYERS_DEF.sekolah.points.length, l: 'Sekolah' },
-                { n: LAYERS_DEF.umkm.points.length, l: 'UMKM' }
+                { n: LAYERS_DEF.umkm.points.length, l: 'UMKM' },
+                { n: LAYERS_DEF.wisata.points.length, l: 'Wisata' }
             ].forEach(s => { bar.innerHTML +=
                     `<div class="stat"><div class="stat-n">${s.n}</div><div class="stat-l">${s.l}</div></div>`; });
         }
